@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 
 import state from '../store'
-import { CustomButton } from '../components'
+import CustomButton from '../components/CustomButton'
 import {
     headContainerAnimation,
     headContentAnimation,
@@ -31,6 +31,7 @@ const Home = () => {
                                 LET'S <br className='xl:block hidden'/> DO IT.
                             </h1>
                         </motion.div>
+
                         <motion.div {...headContentAnimation} className='flex flex-col gap-5'>
                             <p className='max-w-md font-normal text-gay-600 text-base'>
                                 Create your unique and exclusive shirt with our brand-new 3D customization tool. 
@@ -45,7 +46,6 @@ const Home = () => {
                             />
                         </motion.div>
                     </motion.div>
-
                 </motion.section>
             )}
         </AnimatePresence>
